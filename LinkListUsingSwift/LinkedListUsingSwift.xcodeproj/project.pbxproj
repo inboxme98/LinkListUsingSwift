@@ -12,16 +12,20 @@
 		D8F51025225B2505004AF7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F51023225B2505004AF7AA /* Main.storyboard */; };
 		D8F51027225B2506004AF7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F51026225B2506004AF7AA /* Assets.xcassets */; };
 		D8F5102A225B2506004AF7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F51028225B2506004AF7AA /* LaunchScreen.storyboard */; };
+		D8F51032225B26E0004AF7AA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F51031225B26E0004AF7AA /* Node.swift */; };
+		D8F51034225B26F2004AF7AA /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F51033225B26F2004AF7AA /* LinkList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8F5101C225B2505004AF7AA /* LinkListUsingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkListUsingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F5101C225B2505004AF7AA /* LinkedListUsingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedListUsingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F5101F225B2505004AF7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F51021225B2505004AF7AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8F51024225B2505004AF7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8F51026225B2506004AF7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F51029225B2506004AF7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F5102B225B2506004AF7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F51031225B26E0004AF7AA /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		D8F51033225B26F2004AF7AA /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		D8F51013225B2505004AF7AA = {
 			isa = PBXGroup;
 			children = (
-				D8F5101E225B2505004AF7AA /* LinkListUsingSwift */,
+				D8F5101E225B2505004AF7AA /* LinkedListUsingSwift */,
 				D8F5101D225B2505004AF7AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +50,12 @@
 		D8F5101D225B2505004AF7AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8F5101C225B2505004AF7AA /* LinkListUsingSwift.app */,
+				D8F5101C225B2505004AF7AA /* LinkedListUsingSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8F5101E225B2505004AF7AA /* LinkListUsingSwift */ = {
+		D8F5101E225B2505004AF7AA /* LinkedListUsingSwift */ = {
 			isa = PBXGroup;
 			children = (
 				D8F5101F225B2505004AF7AA /* AppDelegate.swift */,
@@ -60,16 +64,18 @@
 				D8F51026225B2506004AF7AA /* Assets.xcassets */,
 				D8F51028225B2506004AF7AA /* LaunchScreen.storyboard */,
 				D8F5102B225B2506004AF7AA /* Info.plist */,
+				D8F51031225B26E0004AF7AA /* Node.swift */,
+				D8F51033225B26F2004AF7AA /* LinkList.swift */,
 			);
-			path = LinkListUsingSwift;
+			path = LinkedListUsingSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8F5101B225B2505004AF7AA /* LinkListUsingSwift */ = {
+		D8F5101B225B2505004AF7AA /* LinkedListUsingSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8F5102E225B2506004AF7AA /* Build configuration list for PBXNativeTarget "LinkListUsingSwift" */;
+			buildConfigurationList = D8F5102E225B2506004AF7AA /* Build configuration list for PBXNativeTarget "LinkedListUsingSwift" */;
 			buildPhases = (
 				D8F51018225B2505004AF7AA /* Sources */,
 				D8F51019225B2505004AF7AA /* Frameworks */,
@@ -79,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = LinkListUsingSwift;
+			name = LinkedListUsingSwift;
 			productName = LinkListUsingSwift;
-			productReference = D8F5101C225B2505004AF7AA /* LinkListUsingSwift.app */;
+			productReference = D8F5101C225B2505004AF7AA /* LinkedListUsingSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8F51017225B2505004AF7AA /* Build configuration list for PBXProject "LinkListUsingSwift" */;
+			buildConfigurationList = D8F51017225B2505004AF7AA /* Build configuration list for PBXProject "LinkedListUsingSwift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8F5101B225B2505004AF7AA /* LinkListUsingSwift */,
+				D8F5101B225B2505004AF7AA /* LinkedListUsingSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F51032225B26E0004AF7AA /* Node.swift in Sources */,
 				D8F51022225B2505004AF7AA /* ViewController.swift in Sources */,
 				D8F51020225B2505004AF7AA /* AppDelegate.swift in Sources */,
+				D8F51034225B26F2004AF7AA /* LinkList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LinkListUsingSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkedListUsingSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LinkListUsingSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkedListUsingSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8F51017225B2505004AF7AA /* Build configuration list for PBXProject "LinkListUsingSwift" */ = {
+		D8F51017225B2505004AF7AA /* Build configuration list for PBXProject "LinkedListUsingSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8F5102C225B2506004AF7AA /* Debug */,
@@ -324,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8F5102E225B2506004AF7AA /* Build configuration list for PBXNativeTarget "LinkListUsingSwift" */ = {
+		D8F5102E225B2506004AF7AA /* Build configuration list for PBXNativeTarget "LinkedListUsingSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8F5102F225B2506004AF7AA /* Debug */,
