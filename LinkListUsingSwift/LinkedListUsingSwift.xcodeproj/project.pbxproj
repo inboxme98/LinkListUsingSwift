@@ -12,7 +12,6 @@
 		D8F51025225B2505004AF7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F51023225B2505004AF7AA /* Main.storyboard */; };
 		D8F51027225B2506004AF7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F51026225B2506004AF7AA /* Assets.xcassets */; };
 		D8F5102A225B2506004AF7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F51028225B2506004AF7AA /* LaunchScreen.storyboard */; };
-		D8F51032225B26E0004AF7AA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F51031225B26E0004AF7AA /* Node.swift */; };
 		D8F51034225B26F2004AF7AA /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F51033225B26F2004AF7AA /* LinkList.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		D8F51026225B2506004AF7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F51029225B2506004AF7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F5102B225B2506004AF7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8F51031225B26E0004AF7AA /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		D8F51033225B26F2004AF7AA /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				D8F51026225B2506004AF7AA /* Assets.xcassets */,
 				D8F51028225B2506004AF7AA /* LaunchScreen.storyboard */,
 				D8F5102B225B2506004AF7AA /* Info.plist */,
-				D8F51031225B26E0004AF7AA /* Node.swift */,
 				D8F51033225B26F2004AF7AA /* LinkList.swift */,
 			);
 			path = LinkedListUsingSwift;
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F51032225B26E0004AF7AA /* Node.swift in Sources */,
 				D8F51022225B2505004AF7AA /* ViewController.swift in Sources */,
 				D8F51020225B2505004AF7AA /* AppDelegate.swift in Sources */,
 				D8F51034225B26F2004AF7AA /* LinkList.swift in Sources */,

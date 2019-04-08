@@ -8,6 +8,19 @@
 
 import Foundation
 
+class Node<T>
+{
+    var data : T
+    var next : Node?
+    
+    init(data:T, next: Node? = nil)
+    {
+        self.data = data
+        self.next = next
+    }
+    
+}
+
 class LinkedList<T>: CustomStringConvertible where T:Comparable, T:CustomStringConvertible
 {
    // Operations in LinkedList
