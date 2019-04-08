@@ -59,6 +59,25 @@ class LinkedList<T>: CustomStringConvertible where T:Comparable, T:CustomStringC
    
     func insert(position:Int, element:T)
     {
+        if position == 0
+        {
+            self.insert(element: element)
+        }
+        else
+        {
+            var item = Node(data: element)
+            var nextnode = self.startNode
+            var previousNode : Node<T>?
+            
+            for _ in 0..<position
+            {
+                previousNode = nextnode
+                nextnode = nextnode?.next
+            }
+            previousNode?.next = item
+            item.next = nextnode
+            
+        }
         
     }
     func removeFirst()
@@ -81,7 +100,15 @@ class LinkedList<T>: CustomStringConvertible where T:Comparable, T:CustomStringC
     
     func remove(at position:Int)
     {
+        var nextNode = self.startNode
+        var previusNode : Node<T>?
         
+        while (nextNode?.next != nil)
+        {
+           previusNode = nextNode
+            nextNode = nextNode?.next
+        }
+        previusNode?.next = nil
     }
     
     func search(element:T) -> Int
