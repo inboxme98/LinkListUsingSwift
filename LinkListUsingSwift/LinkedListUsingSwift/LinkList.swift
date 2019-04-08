@@ -113,7 +113,22 @@ class LinkedList<T>: CustomStringConvertible where T:Comparable, T:CustomStringC
     
     func search(element:T) -> Int
     {
-        return 0
+        var node = self.startNode
+        var count = 0
+        while (node?.next != nil)
+        {
+            if node?.data == element
+            {
+                return count
+            }
+            else
+            {
+                count += 1
+                node = node?.next
+            }
+        }
+        
+        return count
     }
     
   

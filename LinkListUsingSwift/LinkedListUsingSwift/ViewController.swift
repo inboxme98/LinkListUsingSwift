@@ -14,15 +14,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var linkelistObj = LinkedList<Int>()
-        
-        linkelistObj.append(element: 0)
-        linkelistObj.append(element: 1)
-        linkelistObj.append(element: 2)
-        linkelistObj.insert(element: 3)
-        
-        
-        print(linkelistObj.description)
+        let linkedListObj = LinkedList<Int>()
+        linkedListObj.append(element: 0)
+        linkedListObj.append(element: 1)
+        linkedListObj.append(element: 2)
+        linkedListObj.append(element: 3)
+        linkedListObj.append(element: 4)
+        linkedListObj.append(element: 5)
+        print(linkedListObj.description)
+        linkedListObj.insert(element: 100)
+        print(linkedListObj.description)
+        linkedListObj.insert(position: 4, element: 1000)
+        print(linkedListObj.description)
+        print(linkedListObj.search(element: 2))
+        print(linkedListObj.description)
+        linkedListObj.removeFirst()
+        print(linkedListObj.description)
+        linkedListObj.removeLast()
+        print(linkedListObj.description)
+        linkedListObj.remove(at: 2)
+        print(linkedListObj.description)
 
         
         
